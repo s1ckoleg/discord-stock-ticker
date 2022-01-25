@@ -9,7 +9,7 @@ SyslogIdentifier=discord-stock-ticker
 StandardOutput=syslog
 StandardError=syslog
 ExecReload=/bin/kill -HUP $MAINPID
-ExecStart=/etc/discord-stock-ticker/discord-stock-ticker
+ExecStart=/opt/discord-stock-ticker/discord-stock-ticker -port 42069
 Restart=always
 
 [Install]
